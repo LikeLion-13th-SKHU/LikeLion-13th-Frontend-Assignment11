@@ -26,8 +26,8 @@ function HomePage() {
   );
 
   return (
-    <div className="flex min-w-screen justify-center">
-      <h1>포켓몬 도감</h1>
+    <div className="flex  justify-center min-w-screen">
+      <h1 className="text-2xl font-bold">포켓몬 도감</h1>
 
       <input
         type="text"

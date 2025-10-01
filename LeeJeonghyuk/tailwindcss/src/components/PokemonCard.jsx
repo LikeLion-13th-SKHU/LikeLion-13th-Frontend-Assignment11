@@ -11,10 +11,10 @@ function PokemonCard({ pokemon }) {
   const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
   return (
-    <div>
+    <div className="border-1 border-gray-300 rounded-2xl shadow-md shadow-gray-300 flex justify-center w-40 bg-gray-100 m-4">
       <Link to={`/pokemon/${pokemon.name}`}>
         <img src={imageUrl} alt={pokemon.name} />
-        <div>{pokemon.name}</div>
+        <div className="text-center">{pokemon.name}</div>
       </Link>
     </div>
   );
