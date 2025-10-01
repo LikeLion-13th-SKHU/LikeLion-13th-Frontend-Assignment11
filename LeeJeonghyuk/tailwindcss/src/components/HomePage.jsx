@@ -26,10 +26,11 @@ function HomePage() {
   );
 
   return (
-    <div className="flex  justify-center min-w-screen">
-      <h1 className="text-2xl font-bold">포켓몬 도감</h1>
+    <div className="grid justify-center min-w-screen">
+      <h1 className="text-2xl font-bold text-center mb-5 mt-10">포켓몬 도감</h1>
 
       <input
+        className="border-1 border-gray-300 rounded-lg w-60 m-auto px-2.5 py-1.5 text-sm mb-10"
         type="text"
         placeholder="포켓몬 이름 검색"
         value={search}
@@ -41,7 +42,7 @@ function HomePage() {
           <ClipLoader size={60} color="#3b4cca" />
         </div>
       ) : (
-        <ul>
+        <ul className="grid grid-cols-8">
           {filtered.map((pokemon) => (
             <PokemonCard key={pokemon.name} pokemon={pokemon} />
           ))}
