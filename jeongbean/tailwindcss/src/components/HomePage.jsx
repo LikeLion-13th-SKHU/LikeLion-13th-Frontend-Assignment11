@@ -26,14 +26,16 @@ function HomePage() {
 
   return (
     <div>
-      <h1 className="text-center text-4xl font-bold mt-15 mb-7">포켓몬 도감</h1>
+      <h1 className="text-center text-[40px] font-extrabold mt-10 mb-4">
+        포켓몬 도감
+      </h1>
 
       <input
         type="text"
         placeholder="포켓몬 이름 검색"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="block mx-auto border-2 border-gray-300 rounded-[7px] p-1.5 w-60 pl-3 mb-15 text-sm"
+        className="block mx-auto border-2 border-gray-300 rounded-[7px] p-[6px] w-67 pl-3 mb-15 text-md"
       />
 
       {isLoading || isFetching ? (
@@ -41,7 +43,7 @@ function HomePage() {
           <ClipLoader size={60} color="#3b4cca" />
         </div>
       ) : (
-        <ul className="flex flex-wrap justify-center gap-4">
+        <ul className="flex flex-wrap justify-center gap-5 mx-10">
           {filtered.map((pokemon) => (
             <PokemonCard key={pokemon.name} pokemon={pokemon} />
           ))}
