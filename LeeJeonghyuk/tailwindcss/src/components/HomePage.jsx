@@ -27,10 +27,12 @@ function HomePage() {
 
   return (
     <div className="grid justify-center min-w-screen">
-      <h1 className="text-2xl font-bold text-center mb-5 mt-10">포켓몬 도감</h1>
+      <h1 className="text-2xl font-bold text-center mb-5 mt-10 font-rf">
+        포켓몬 도감
+      </h1>
 
       <input
-        className="border-1 border-gray-300 rounded-lg w-60 m-auto px-2.5 py-1.5 text-sm mb-10"
+        className="border-1 border-gray-300 rounded-lg w-60 m-auto px-2.5 py-1.5 text-sm mb-10 font-rf"
         type="text"
         placeholder="포켓몬 이름 검색"
         value={search}
