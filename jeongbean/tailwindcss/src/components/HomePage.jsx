@@ -43,7 +43,7 @@ function HomePage() {
           <ClipLoader size={60} color="#3b4cca" />
         </div>
       ) : (
-        <ul className="flex flex-wrap justify-center gap-5 mx-10">
+        <ul className="grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 px-30">
           {filtered.map((pokemon) => (
             <PokemonCard key={pokemon.name} pokemon={pokemon} />
           ))}
