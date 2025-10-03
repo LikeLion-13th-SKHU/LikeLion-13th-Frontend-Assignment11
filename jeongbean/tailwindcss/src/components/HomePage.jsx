@@ -25,7 +25,7 @@ function HomePage() {
   );
 
   return (
-    <div>
+    <div className="font-san">
       <h1 className="text-center text-[40px] font-extrabold mt-10 mb-4">
         포켓몬 도감
       </h1>
