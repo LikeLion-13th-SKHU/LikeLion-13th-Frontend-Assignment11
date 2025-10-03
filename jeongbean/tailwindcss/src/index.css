@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "SandollSamlipHobbangOutline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-san: "SandollSamlipHobbangOutline", serif;
+}
