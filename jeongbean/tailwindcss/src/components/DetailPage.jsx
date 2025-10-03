@@ -56,7 +56,7 @@ function DetailPage() {
         <ul className="border-t-2 border-red-500 mx-10 mb-15">
           {pokemon.stats.map((stat) => (
             <li
-              className="border-b-2 border-red-500 flex justify-between items-center py-1"
+              className="border-b-1 border-red-500 flex justify-between items-center py-1"
               key={stat.stat.name}
             >
               <span>{stat.stat.name.toUpperCase()}</span>
